@@ -35,36 +35,7 @@ export default function Hero({ onViewWork, onDownloadResume }: HeroProps) {
   const lastName = data?.personal?.name?.split(' ').slice(1).join(' ') || '';
 
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center px-6 pt-20 relative overflow-hidden">
-      {/* Animated orbs in background */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <motion.div
-          animate={{ 
-            x: [0, 100, 0],
-            y: [0, -50, 0],
-            scale: [1, 1.2, 1],
-          }}
-          transition={{ duration: 20, repeat: Infinity, ease: "easeInOut" }}
-          className="absolute -top-40 -left-40 w-80 h-80 bg-foreground/5 rounded-full blur-3xl"
-        />
-        <motion.div
-          animate={{ 
-            x: [0, -80, 0],
-            y: [0, 80, 0],
-            scale: [1, 1.3, 1],
-          }}
-          transition={{ duration: 25, repeat: Infinity, ease: "easeInOut" }}
-          className="absolute -bottom-40 -right-40 w-96 h-96 bg-foreground/5 rounded-full blur-3xl"
-        />
-        <motion.div
-          animate={{ 
-            x: [0, 50, 0],
-            y: [0, 100, 0],
-          }}
-          transition={{ duration: 15, repeat: Infinity, ease: "easeInOut" }}
-          className="absolute top-1/2 left-1/4 w-64 h-64 bg-foreground/5 rounded-full blur-3xl"
-        />
-      </div>
+    <section id="home" className="min-h-screen flex items-center justify-center px-6 pt-20 relative">
 
       <div className="max-w-7xl mx-auto w-full relative z-10">
         <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-center">
