@@ -1,0 +1,180 @@
+{
+  "personal": {
+    "name": "Dagim Debebe",
+    "title": "Full Stack Developer",
+    "email": "dagimdebebehabte@gmail.com",
+    "phone": "+251922826240",
+    "location": "Addis Ababa, Ethiopia",
+    "bio": "Passionate full-stack developer with expertise in building modern web applications. I love creating elegant solutions to complex problems and continuously learning new technologies.",
+    "image": "/path-to-your-image.jpg",
+    "resume": "/path-to-your-resume.pdf",
+    "social": {
+      "github": "https://github.com/DagimD24",
+      "linkedin": "https://linkedin.com/in/dagimdebebe",
+      "telegram": "https://telegram.me/B_BISH",
+      "portfolio": "https://yourportfolio.com"
+    }
+  },
+  "about": {
+    "description": "I'm a passionate full-stack developer with a strong foundation in both front-end and back-end technologies. With several years of experience in web development, I specialize in creating scalable, user-friendly applications that solve real-world problems.",
+    "highlights": [
+      "2+ years of professional development experience",
+      "Proficient in modern web technologies and frameworks",
+      "Strong problem-solving and analytical skills",
+      "Passionate about clean code and best practices"
+    ]
+  },
+  "skills": {
+    "frontend": [
+      { "name": "React", "level": 90 },
+      { "name": "TypeScript", "level": 85 },
+      { "name": "JavaScript", "level": 95 },
+      { "name": "HTML/CSS", "level": 90 },
+      { "name": "Tailwind CSS", "level": 85 },
+      { "name": "Next.js", "level": 80 }
+    ],
+    "backend": [
+      { "name": "Node.js", "level": 85 },
+      { "name": "Express", "level": 80 },
+      { "name": "Python", "level": 75 },
+      { "name": "PostgreSQL", "level": 80 },
+      { "name": "MongoDB", "level": 75 },
+      { "name": "REST APIs", "level": 90 }
+    ],
+    "tools": [
+      { "name": "Git", "level": 90 },
+      { "name": "Docker", "level": 75 },
+      { "name": "DigitalOcean", "level": 70 },
+      { "name": "Frappe Framework", "level": 70 },
+      { "name": "ERPNext", "level": 70 },
+      { "name": "GitHub", "level": 95 },
+      { "name": "Figma", "level": 65 }
+    ],
+    "languages": [
+      { "name": "TypeScript", "level": 90 },
+      { "name": "JavaScript", "level": 95 },
+      { "name": "Python", "level": 80 },
+      { "name": "Go", "level": 75 }
+    ]
+  },
+  "projects": [
+    {
+      "id":1,
+      "title": "Car Rental Platform",
+      "description": "A web-based car rental platform built with Next.js and EspoCRM. It uses Next.js routes to fetch and process EspoCRM APIs, allowing users to browse, book, and manage rentals while admins handle fleet and customer data through EspoCRM.",
+      "image": "/project-images/carrental.jpg",
+      "technologies": ["Next.js", "EspoCRM", "REST API", "Tailwind CSS"],
+      "github": "https://github.com/DagimD24/car-rental-platform",
+      "demo": "https://yougocarrentals.com",
+      "featured": true
+    },    
+    {
+      "id": 2,
+      "title": "LinkForge",
+      "description": "A real-time collaborative knowledge canvas blending Obsidian's wiki-linking with Figma's infinite, zoomable UI. Users create color-coded zones on a shared canvas for notes, embeds, and mind maps, ideal for team brainstorming. Actively maintained with ongoing enhancements to collaboration features.",
+      "image": "/project-images/linkforge.jpg",
+      "technologies": ["React", "TypeScript", "Go", "Tailwind CSS", "Yjs"],
+      "github": "https://github.com/DagimD24/linkforge",
+      "demo": "https://your-linkforge-demo.com",
+      "featured": true
+    },
+    {
+      "id": 3,
+      "title": "Bulls and Cows Multiplayer Game",
+      "description": "A real-time, web-based implementation of the classic Bulls and Cows number-guessing game. The frontend is built with Svelte, while a Go server manages game sessions, player states, and matchmaking. WebSockets are used for low-latency communication, enabling players to create or join lobbies, challenge opponents, and receive live updates as guesses are made and results are calculated.",
+      "image": "/project-images/bulls-and-cows.jpg",
+      "technologies": ["Svelte", "JavaScript", "TypeScript", "Go", "WebSockets", "REST API"
+      ],
+      "github": "https://github.com/DagimD24/bulls-and-cows",
+      "demo": "",
+      "featured": true
+    }
+  ],
+  "experience": [
+    {
+      "id": 1,
+      "company": "MMCY | TECH",
+      "position": "Full-stack Software Developer (Full-time)",
+      "location": "Addis Ababa, Ethiopia",
+      "startDate": "2024-11",
+      "endDate": "Present",
+      "current": true,
+      "description": "Customizing Frappe Framework and ERPNext modules to meet client-specific requirements.",
+      "achievements": [
+        "Developing custom apps, workflows, and doctypes",
+        "Implementing business logic using Python and Server Scripts",
+        "Designing client-side features using JavaScript and Frappe UI components",
+        "Integrating third-party services via APIs",
+        "Writing custom validation and automation rules",
+        "Collaborating with stakeholders to gather requirements and deliver solutions",
+        "Debugging and optimizing system performance",
+        "Creating custom reports and print formats",
+        "Managing data migrations and system configurations"
+      ]
+    },
+    {
+      "id": 2,
+      "company": "Addis Financial",
+      "position": "Software Engineer (Remote, Contractual)",
+      "location": "Addis Ababa, Ethiopia",
+      "startDate": "2024-08",
+      "endDate": "2024-10",
+      "current": false,
+      "description": "Contributed to the development of a comprehensive fintech platform focused on digital wallet management, lottery features, and investment functionalities.",
+      "achievements": [
+        "Contributed in backend development using Node.js, Express, to ensure seamless integration and deployment of core services",
+        "Designed and implemented features like a transaction history module, lottery system, and self-directed investment tools",
+        "Employed PaaS and IaaS cloud technologies such as DigitalOcean and Render for cloud deployment",
+        "Leveraged CI/CD pipelines with GitHub Actions to streamline deployment workflows"
+      ]
+    },
+    {
+      "id": 3,
+      "company": "Mercy ICT Solutions",
+      "position": "Full-stack Developer (Intern)",
+      "location": "Addis Ababa, Ethiopia",
+      "startDate": "2022-06",
+      "endDate": "2022-08",
+      "current": false,
+      "description": "Full-stack development internship focusing on self-contained UI elements and RESTful API creation.",
+      "achievements": [
+        "Creating and updating self-contained UI elements based on provided design guidelines",
+        "Managing application state using tools like Redux toolkit and Context API in React",
+        "Creating RESTful APIs with Express.js and Node.js to handle CRUD operations",
+        "Designing and managing MongoDB databases, including creating schemas and models",
+        "Integrating front-end components with back-end services and APIs"
+      ]
+    },
+    {
+      "id": 4,
+      "company": "Tria trading P.L.C",
+      "position": "Frontend Developer (Intern)",
+      "location": "Addis Ababa, Ethiopia",
+      "startDate": "2022-06",
+      "endDate": "2022-08",
+      "current": false,
+      "description": "Frontend development internship focused on building reusable UI components.",
+      "achievements": [
+        "Building and maintaining reusable and modular UI components based on design specifications",
+        "Implementing styles and layouts using CSS, and CSS-in-JS libraries like Tailwind CSS, Bootstrap",
+        "Fetching and displaying data from backend APIs, often involving asynchronous programming"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "id": 1,
+      "institution": "Adama Science and Technology University",
+      "degree": "Bachelor of Science in Computer Science and Engineering",
+      "location": "Adama, Ethiopia",
+      "startDate": "2019-09",
+      "endDate": "2024-07",
+      "gpa": "3.14/4.0"
+    }
+  ],
+  "contact": {
+    "title": "Get In Touch",
+    "description": "I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision. Feel free to reach out!",
+    "availability": "Available for freelance work and full-time opportunities"
+  }
+}

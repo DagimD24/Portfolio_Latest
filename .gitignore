@@ -1,0 +1,4 @@
+node_modules
+/server
+design_guidelines.md
+drizzle.config.ts
