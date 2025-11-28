@@ -151,7 +151,7 @@ export default function Hero({ onViewWork, onDownloadResume }: HeroProps) {
             </motion.div>
 
             {/* Stats or social proof */}
-            <motion.div
+            {/* <motion.div
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               viewport={{ amount: 0.6 }}
@@ -164,15 +164,15 @@ export default function Hero({ onViewWork, onDownloadResume }: HeroProps) {
               </div>
               <div className="w-px h-12 bg-border"></div>
               <div className="text-center md:text-left">
-                <p className="text-2xl md:text-3xl font-display font-bold text-foreground">15+</p>
+                <p className="text-2xl md:text-3xl font-display font-bold text-foreground">5+</p>
                 <p className="text-xs md:text-sm text-muted-foreground font-display">Projects Done</p>
               </div>
               <div className="w-px h-12 bg-border"></div>
               <div className="text-center md:text-left">
-                <p className="text-2xl md:text-3xl font-display font-bold text-foreground">10+</p>
+                <p className="text-2xl md:text-3xl font-display font-bold text-foreground">5+</p>
                 <p className="text-xs md:text-sm text-muted-foreground font-display">Happy Clients</p>
               </div>
-            </motion.div>
+            </motion.div> */}
           </motion.div>
 
           {/* Right Avatar */}
