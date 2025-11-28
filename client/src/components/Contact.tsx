@@ -1,4 +1,4 @@
-import type React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Github, Linkedin, Send, Mail, MapPin, Phone } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -55,6 +55,7 @@ type FormValues = z.infer<typeof formSchema>;
 export default function Contact() {
   const { data, loading, error } = usePortfolioData();
   const { toast } = useToast();
+  const [isSubmitting, setIsSubmitting] = useState(false);
   
   const form = useForm<FormValues>({
     resolver: zodResolver(formSchema),
@@ -65,13 +66,62 @@ export default function Contact() {
     },
   });
 
-  const onSubmit = (data: FormValues) => {
-    console.log('Form submitted:', data);
-    toast({
-      title: 'Message sent!',
-      description: 'Thank you for reaching out. I\'ll get back to you soon.',
-    });
-    form.reset();
+  const onSubmit = async (values: FormValues) => {
+    const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID as string | undefined;
+    const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID as string | undefined;
+    const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY as string | undefined;
+
+    if (!serviceId || !templateId || !publicKey) {
+      toast({
+        title: 'Configuration error',
+        description: 'Email service is not configured correctly. Please try again later.',
+        variant: 'destructive',
+      });
+      return;
+    }
+
+    try {
+      setIsSubmitting(true);
+
+      const response = await fetch('https://api.emailjs.com/api/v1.0/email/send', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          service_id: serviceId,
+          template_id: templateId,
+          user_id: publicKey,
+          template_params: {
+            name: values.name,
+            email: values.email,
+            from_name: values.name,
+            from_email: values.email,
+            message: values.message,
+            to_email: data?.personal?.email,
+          },
+        }),
+      });
+
+      if (!response.ok) {
+        throw new Error('Failed to send message');
+      }
+
+      toast({
+        title: 'Message sent!',
+        description: "Thank you for reaching out. I'll get back to you soon.",
+      });
+      form.reset();
+    } catch (err) {
+      console.error('Error sending contact message:', err);
+      toast({
+        title: 'Failed to send message',
+        description: 'Something went wrong while sending your message. Please try again later.',
+        variant: 'destructive',
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   if (loading) {
@@ -261,8 +311,9 @@ export default function Contact() {
                   type="submit"
                   className="w-full"
                   data-testid="button-submit"
+                  disabled={isSubmitting}
                 >
-                  Send Message
+                  {isSubmitting ? 'Sending...' : 'Send Message'}
                 </Button>
               </form>
             </Form>
