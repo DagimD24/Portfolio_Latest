@@ -33,56 +33,6 @@ const techLogos: { [key: string]: string } = {
   'Go': 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/go/go-original.svg',
 };
 
-const projects = [
-  {
-    id: 1,
-    title: 'E-Commerce Platform',
-    description: 'A full-featured online shopping platform with real-time inventory management, payment processing, and admin dashboard.',
-    tech: ['React', 'Node.js', 'PostgreSQL', 'Stripe'],
-    liveUrl: '#',
-    githubUrl: '#',
-  },
-  {
-    id: 2,
-    title: 'Task Management App',
-    description: 'Collaborative task management tool with real-time updates, team workspaces, and progress tracking.',
-    tech: ['Next.js', 'TypeScript', 'MongoDB', 'WebSocket'],
-    liveUrl: '#',
-    githubUrl: '#',
-  },
-  {
-    id: 3,
-    title: 'Car Rental Platform',
-    description: 'Modern chat application integrated with AI for smart replies, sentiment analysis, and conversation summaries.',
-    tech: ['React', 'Express', 'OpenAI API', 'Redis'],
-    liveUrl: '#',
-    githubUrl: '#',
-  },
-  {
-    id: 4,
-    title: 'Portfolio CMS',
-    description: 'Content management system designed for developers and creatives to showcase their work with ease.',
-    tech: ['Next.js', 'GraphQL', 'PostgreSQL', 'AWS'],
-    liveUrl: '#',
-    githubUrl: '#',
-  },
-  {
-    id: 5,
-    title: 'Analytics Dashboard',
-    description: 'Real-time analytics dashboard with interactive charts, data visualization, and custom reporting.',
-    tech: ['React', 'D3.js', 'Node.js', 'MongoDB'],
-    liveUrl: '#',
-    githubUrl: '#',
-  },
-  {
-    id: 6,
-    title: 'Social Media API',
-    description: 'RESTful API for a social networking platform with authentication, posts, comments, and user relationships.',
-    tech: ['Express', 'PostgreSQL', 'JWT', 'Docker'],
-    liveUrl: '#',
-    githubUrl: '#',
-  },
-];
 
 interface Project {
   id: number;
@@ -122,11 +72,11 @@ function ProjectCard({ project, index, techLogos }: ProjectCardProps) {
     >
       {/* Decorative line at top */}
       <div className="absolute top-0 left-0 right-0 h-1 bg-foreground opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-      
+
       <h3 className="text-xl font-display font-bold text-foreground mb-3 group-hover:text-foreground/70 transition-colors" data-testid={`text-project-name-${project.id}`}>
         {project.title}
       </h3>
-      
+
       <p className="text-muted-foreground text-sm mb-6 leading-relaxed font-sans">
         {project.description}
       </p>
@@ -141,9 +91,9 @@ function ProjectCard({ project, index, techLogos }: ProjectCardProps) {
               title={tech}
             >
               {techLogos[tech] ? (
-                <img 
-                  src={techLogos[tech]} 
-                  alt={tech} 
+                <img
+                  src={techLogos[tech]}
+                  alt={tech}
                   className="w-3.5 h-3.5"
                 />
               ) : null}
@@ -153,26 +103,34 @@ function ProjectCard({ project, index, techLogos }: ProjectCardProps) {
         </div>
 
         <div className="flex gap-3">
-          <Button
-            variant="default"
-            size="sm"
-            onClick={() => console.log('Live demo:', project.title)}
-            data-testid={`button-live-demo-${project.id}`}
-            className="flex-1 bg-foreground hover:bg-foreground/90 text-background font-display"
-          >
-            <ExternalLink className="w-4 h-4 mr-2" />
-            Live Demo
-          </Button>
-          <Button
-            variant="outline"
-            size="sm"
-            onClick={() => console.log('GitHub:', project.title)}
-            data-testid={`button-github-${project.id}`}
-            className="flex-1 font-display border-foreground/30 hover:border-foreground/60 hover:bg-foreground/5"
-          >
-            <Github className="w-4 h-4 mr-2" />
-            GitHub
-          </Button>
+          {project.demo && (
+            <Button
+              variant="default"
+              size="sm"
+              asChild
+              data-testid={`button-live-demo-${project.id}`}
+              className="flex-1 bg-foreground hover:bg-foreground/90 text-background font-display"
+            >
+              <a href={project.demo} target="_blank" rel="noopener noreferrer">
+                <ExternalLink className="w-4 h-4 mr-2" />
+                Live Demo
+              </a>
+            </Button>
+          )}
+          {project.github && (
+            <Button
+              variant="outline"
+              size="sm"
+              asChild
+              data-testid={`button-github-${project.id}`}
+              className="flex-1 font-display border-foreground/30 hover:border-foreground/60 hover:bg-foreground/5"
+            >
+              <a href={project.github} target="_blank" rel="noopener noreferrer">
+                <Github className="w-4 h-4 mr-2" />
+                GitHub
+              </a>
+            </Button>
+          )}
         </div>
       </div>
     </motion.div>
@@ -236,11 +194,11 @@ export default function Projects() {
           {featuredProjects.length > 0 ? (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
               {featuredProjects.map((project, index) => (
-                <ProjectCard 
-                  key={project.id} 
-                  project={project} 
-                  index={index} 
-                  techLogos={techLogos} 
+                <ProjectCard
+                  key={project.id}
+                  project={project}
+                  index={index}
+                  techLogos={techLogos}
                 />
               ))}
             </div>

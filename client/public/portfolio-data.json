@@ -26,67 +26,153 @@
   },
   "skills": {
     "frontend": [
-      { "name": "React", "level": 90 },
-      { "name": "TypeScript", "level": 85 },
-      { "name": "JavaScript", "level": 95 },
-      { "name": "HTML/CSS", "level": 90 },
-      { "name": "Tailwind CSS", "level": 85 },
-      { "name": "Next.js", "level": 80 }
+      {
+        "name": "React",
+        "level": 90
+      },
+      {
+        "name": "TypeScript",
+        "level": 85
+      },
+      {
+        "name": "JavaScript",
+        "level": 95
+      },
+      {
+        "name": "HTML/CSS",
+        "level": 90
+      },
+      {
+        "name": "Tailwind CSS",
+        "level": 85
+      },
+      {
+        "name": "Next.js",
+        "level": 80
+      }
     ],
     "backend": [
-      { "name": "Node.js", "level": 85 },
-      { "name": "Express", "level": 80 },
-      { "name": "Python", "level": 75 },
-      { "name": "PostgreSQL", "level": 80 },
-      { "name": "MongoDB", "level": 75 },
-      { "name": "REST APIs", "level": 90 }
+      {
+        "name": "Node.js",
+        "level": 85
+      },
+      {
+        "name": "Express",
+        "level": 80
+      },
+      {
+        "name": "Python",
+        "level": 75
+      },
+      {
+        "name": "PostgreSQL",
+        "level": 80
+      },
+      {
+        "name": "MongoDB",
+        "level": 75
+      },
+      {
+        "name": "REST APIs",
+        "level": 90
+      }
     ],
     "tools": [
-      { "name": "Git", "level": 90 },
-      { "name": "Docker", "level": 75 },
-      { "name": "DigitalOcean", "level": 70 },
-      { "name": "Frappe Framework", "level": 70 },
-      { "name": "ERPNext", "level": 70 },
-      { "name": "GitHub", "level": 95 },
-      { "name": "Figma", "level": 65 }
+      {
+        "name": "Git",
+        "level": 90
+      },
+      {
+        "name": "Docker",
+        "level": 75
+      },
+      {
+        "name": "DigitalOcean",
+        "level": 70
+      },
+      {
+        "name": "Frappe Framework",
+        "level": 70
+      },
+      {
+        "name": "ERPNext",
+        "level": 70
+      },
+      {
+        "name": "GitHub",
+        "level": 95
+      },
+      {
+        "name": "Figma",
+        "level": 65
+      }
     ],
     "languages": [
-      { "name": "TypeScript", "level": 90 },
-      { "name": "JavaScript", "level": 95 },
-      { "name": "Python", "level": 80 },
-      { "name": "Go", "level": 75 }
+      {
+        "name": "TypeScript",
+        "level": 90
+      },
+      {
+        "name": "JavaScript",
+        "level": 95
+      },
+      {
+        "name": "Python",
+        "level": 80
+      },
+      {
+        "name": "Go",
+        "level": 75
+      }
     ]
   },
   "projects": [
     {
-      "id":1,
+      "id": 1,
       "title": "Car Rental Platform",
       "description": "A web-based car rental platform built with Next.js and EspoCRM. It uses Next.js routes to fetch and process EspoCRM APIs, allowing users to browse, book, and manage rentals while admins handle fleet and customer data through EspoCRM.",
       "image": "/project-images/carrental.jpg",
-      "technologies": ["Next.js", "EspoCRM", "REST API", "Tailwind CSS"],
+      "technologies": [
+        "Next.js",
+        "EspoCRM",
+        "REST API",
+        "Tailwind CSS"
+      ],
       "github": "https://github.com/DagimD24/car-rental-platform",
       "demo": "https://yougocarrentals.com",
       "featured": true
-    },    
+    },
     {
       "id": 2,
-      "title": "LinkForge",
-      "description": "A real-time collaborative knowledge canvas blending Obsidian's wiki-linking with Figma's infinite, zoomable UI. Users create color-coded zones on a shared canvas for notes, embeds, and mind maps, ideal for team brainstorming. Actively maintained with ongoing enhancements to collaboration features.",
-      "image": "/project-images/linkforge.jpg",
-      "technologies": ["React", "TypeScript", "Go", "Tailwind CSS", "Yjs"],
-      "github": "https://github.com/DagimD24/linkforge",
-      "demo": "https://your-linkforge-demo.com",
+      "title": "Bulls and Cows Multiplayer Game",
+      "description": "A real-time, web-based implementation of the classic Bulls and Cows number-guessing game. The frontend is built with Svelte, while a Go server manages game sessions, player states, and matchmaking. WebSockets are used for low-latency communication, enabling players to create or join lobbies, challenge opponents, and receive live updates as guesses are made and results are calculated.",
+      "image": "/project-images/bulls-and-cows.jpg",
+      "technologies": [
+        "Svelte",
+        "JavaScript",
+        "TypeScript",
+        "Go",
+        "WebSockets",
+        "REST API"
+      ],
+      "github": "https://github.com/DagimD24/bulls-and-cows-frontend",
+      "demo": "https://38c26ded.bulls-and-cows-frontend.pages.dev",
       "featured": true
     },
     {
       "id": 3,
-      "title": "Bulls and Cows Multiplayer Game",
-      "description": "A real-time, web-based implementation of the classic Bulls and Cows number-guessing game. The frontend is built with Svelte, while a Go server manages game sessions, player states, and matchmaking. WebSockets are used for low-latency communication, enabling players to create or join lobbies, challenge opponents, and receive live updates as guesses are made and results are calculated.",
-      "image": "/project-images/bulls-and-cows.jpg",
-      "technologies": ["Svelte", "JavaScript", "TypeScript", "Go", "WebSockets", "REST API"
+      "title": "LinkForge",
+      "description": "A real-time collaborative knowledge canvas blending Obsidian's wiki-linking with Figma's infinite, zoomable UI. Users create color-coded zones on a shared canvas for notes, embeds, and mind maps, ideal for team brainstorming. Actively maintained with ongoing enhancements to collaboration features.",
+      "image": "/project-images/linkforge.jpg",
+      "technologies": [
+        "React",
+        "TypeScript",
+        "Go",
+        "Tailwind CSS",
+        "Yjs"
       ],
-      "github": "https://github.com/DagimD24/bulls-and-cows",
-      "demo": "",
+      "github": "https://github.com/DagimD24/linkforge",
+      "demo": "https://your-linkforge-demo.com",
       "featured": true
     }
   ],
