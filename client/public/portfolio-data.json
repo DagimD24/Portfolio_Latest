@@ -105,6 +105,14 @@
       {
         "name": "Figma",
         "level": 65
+      },
+      {
+        "name": "Convex",
+        "level": 80
+      },
+      {
+        "name": "Supabase",
+        "level": 75
       }
     ],
     "languages": [
@@ -173,6 +181,37 @@
       ],
       "github": "https://github.com/DagimD24/linkforge",
       "demo": "https://your-linkforge-demo.com",
+      "featured": false
+    },
+    {
+      "id": 4,
+      "title": "AdVault",
+      "description": "A high-performance social media ad management platform featuring a centralized dashboard for cross-platform campaign tracking. It offers real-time analytics, automated budget bidding, and AI-driven audience segmentation to optimize ROI. Built with a robust backend to handle high-concurrency event data and a sleek, responsive interface.",
+      "image": "/project-images/advault.jpg",
+      "technologies": [
+        "Next.js",
+        "TypeScript",
+        "Convex",
+        "Tailwind CSS"
+      ],
+      "github": "https://github.com/DagimD24/advault",
+      "demo": "https://advault-seven.vercel.app/",
+      "featured": true
+    },
+    {
+      "id": 5,
+      "title": "Enterprise ERP & HRMS Suite",
+      "description": "A comprehensive internal resource planning system designed for a private firm to automate HR workflows, financial reporting, and payroll processing. I spearheaded the development of custom Frappe-based modules and optimized CI/CD pipelines to ensure 99.9% uptime for mission-critical business operations.",
+      "image": "/project-images/enterprise-erp.jpg",
+      "technologies": [
+        "Python",
+        "Frappe",
+        "ERPNext",
+        "MariaDB",
+        "Docker"
+      ],
+      "github": "Private Repository",
+      "demo": "Internal Use Only",
       "featured": true
     }
   ],

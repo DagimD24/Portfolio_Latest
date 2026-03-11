@@ -119,6 +119,16 @@ const skillMetadata: Record<string, SkillMetadata> = {
     logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg',
     color: '#F24E1E',
     bgGradient: 'from-orange-500/10 to-red-500/10',
+  },
+  'Convex': {
+    logo: 'https://cdn.simpleicons.org/convex',
+    color: '#EE342F',
+    bgGradient: 'from-red-500/10 to-orange-500/10',
+  },
+  'Supabase': {
+    logo: 'https://cdn.simpleicons.org/supabase',
+    color: '#3FCF8E',
+    bgGradient: 'from-emerald-400/10 to-green-500/10',
   }
 };
 

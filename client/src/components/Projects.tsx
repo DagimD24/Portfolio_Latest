@@ -31,6 +31,11 @@ const techLogos: { [key: string]: string } = {
   'Docker': 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg',
   'Svelte': 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/svelte/svelte-original.svg',
   'Go': 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/go/go-original.svg',
+  'Convex': 'https://cdn.simpleicons.org/convex',
+  'Supabase': 'https://cdn.simpleicons.org/supabase',
+  'Frappe': 'https://3x594zub0b.ufs.sh/f/2igJYTwT7E14UmoTxGhay4mkAEv9hHCYPogZjDO5cndbJ6l0',
+  'ERPNext': 'https://3x594zub0b.ufs.sh/f/2igJYTwT7E14hJav7TS2zIvxYTE041i3QVwoS7F9bDNCrpWM',
+  'MariaDB': 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mariadb/mariadb-original.svg',
 };
 
 
